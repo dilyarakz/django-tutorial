@@ -8,4 +8,4 @@ from django.http import HttpResponse
 # Action 
 
 def say_hello(request):
-    return HttpResponse('Hello World!')
+    return render(request, 'hello.html', {'name': 'Dida'})
